@@ -1,0 +1,23 @@
+[user]
+	name = Brett Higgins
+	email = brett.higgins@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[log]
+	date = local
+[core]
+	excludesfile = ~/.gitignore
+[alias]
+	switch = !legit switch \"$@\"
+	branches = !legit branches
+	sprout = !legit sprout \"$@\"
+	unpublish = !legit unpublish \"$@\"
+	harvest = !legit harvest \"$@\"
+	sync = !legit sync \"$@\"
+	publish = !legit publish \"$@\"
+	graft = !legit graft \"$@\"
+[github]
+	user = brettdh
+	token = df9778f491515ce7dee8bc2da9bd20a775607633
