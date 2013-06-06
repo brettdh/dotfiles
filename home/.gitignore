@@ -20,3 +20,6 @@ build/
 
 # emacs
 *~
+
+# gitconfig sensitive data
+.gitconfig.local

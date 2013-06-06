@@ -18,6 +18,6 @@
 	sync = !legit sync \"$@\"
 	publish = !legit publish \"$@\"
 	graft = !legit graft \"$@\"
-[github]
-	user = brettdh
-	token = df9778f491515ce7dee8bc2da9bd20a775607633
+
+[include]
+    path = ~/.gitconfig.local
