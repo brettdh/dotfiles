@@ -79,3 +79,4 @@
 
 (if window-system
     (set-frame-size (selected-frame) 100 50))
+(put 'upcase-region 'disabled nil)

@@ -19,5 +19,8 @@
 	publish = !legit publish \"$@\"
 	graft = !legit graft \"$@\"
 
+[push]
+	default = matching
+
 [include]
     path = ~/.gitconfig.local
