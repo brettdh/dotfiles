@@ -59,6 +59,7 @@ export SL4A_ROOT=~/src/android-scripting
 export PATH=$PATH:~/bin
 export GOPATH=$HOME/src/go
 export PATH=$PATH:$GOPATH
+export NDK_MODULE_PATH=$HOME/ndk_tools
 
 export CLICOLOR=true
 export EDITOR=emacs
