@@ -50,6 +50,7 @@ export RUBYOPT=rubygems
 export PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:${PATH}"
 export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=/var/lib/gems/1.8/bin:$PATH
 export PATH=$GEM_HOME/bin:$PATH
 export PATH=$PATH:/usr/texbin
 export PATH=$PATH:~/src/android-sdk-mac_86/tools
