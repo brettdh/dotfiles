@@ -61,6 +61,7 @@ export PATH=$PATH:~/bin
 export GOPATH=$HOME/src/go
 export PATH=$PATH:$GOPATH
 export NDK_MODULE_PATH=$HOME/ndk_tools
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 
 export CLICOLOR=true
 export EDITOR=emacs

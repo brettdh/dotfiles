@@ -21,6 +21,9 @@
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
 
+(require 'protobuf-mode)
+(add-to-list 'auto-mode-alist '("\\.proto$" . protobuf-mode))
+
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
