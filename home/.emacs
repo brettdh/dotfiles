@@ -14,12 +14,18 @@
 (global-auto-revert-mode t)
 
 (add-to-list 'load-path "~/.emacs.d/site-lisp")
+(add-to-list 'load-path "/usr/local/share/emacs/site-lisp")
 
-(require 'package)
-(package-initialize)
-        
-(add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+;(require 'package)
+;(package-initialize)
+;        
+;(add-to-list 'package-archives
+;             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+
+(require 'cask)
+(cask-initialize)
+
+(add-hook 'after-init-hook #'global-flycheck-mode)
 
 (require 'protobuf-mode)
 (add-to-list 'auto-mode-alist '("\\.proto$" . protobuf-mode))
