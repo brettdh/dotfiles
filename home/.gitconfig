@@ -9,6 +9,7 @@
 	date = local
 [core]
 	excludesfile = ~/.gitignore
+	editor = mvim -f
 [alias]
 	switch = !legit switch \"$@\"
 	branches = !legit branches
@@ -18,9 +19,26 @@
 	sync = !legit sync \"$@\"
 	publish = !legit publish \"$@\"
 	graft = !legit graft \"$@\"
+	lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --exclude 'refs/notes/commits' --exclude 'refs/notes/subgit' --all
+	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --exclude 'refs/notes/commits' --exclude 'refs/notes/subgit' --all
+	lg = !"git lg1"
 
 [push]
-	default = matching
+	default = current
 
 [include]
     path = ~/.gitconfig.local
+[pull]
+	default = current
+[branch]
+	autosetuprebase = always
+[filter "media"]
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
+[diff]
+	tool = opendiff
+[merge]
+	tool = opendiff
+[color "diff"]
+	whitespace = red reverse

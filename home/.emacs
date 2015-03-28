@@ -89,3 +89,10 @@
 (if window-system
     (set-frame-size (selected-frame) 100 50))
 (put 'upcase-region 'disabled nil)
+
+(global-set-key (kbd "C-c d")
+                (lambda ()
+                  (interactive)
+                  (shell-command "zsh -c \". ~/.zshrc; dev_since\"")))
+
+(require 'xcscope)

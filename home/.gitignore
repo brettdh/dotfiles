@@ -12,8 +12,10 @@ xcuserdata/
 
 # Generated files
 build/
+dist/
 *.[oa]
 *.pyc
+*.class
 
 # Backup files
 *~.nib
@@ -21,5 +23,14 @@ build/
 # emacs
 *~
 
+# vim
+.swp
+.*.swp
+.*.swo
+
 # gitconfig sensitive data
 .gitconfig.local
+
+.svn
+
+tags
