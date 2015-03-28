@@ -7,6 +7,9 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
 ZSH_THEME="alanpeabody"
+#ZSH_THEME="agnoster"
+#DEFAULT_USER="brettdh"
+#ZSH_THEME="amuse"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -30,7 +33,7 @@ ZSH_THEME="alanpeabody"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx macports pip screen terminalapp zsh-syntax-highlighting vagrant)
+plugins=(git osx macports pip screen terminalapp zsh-syntax-highlighting vagrant gradle brew)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -49,7 +52,7 @@ export RUBYOPT=rubygems
 
 export PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:${PATH}"
 export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:$PATH
 export PATH=/var/lib/gems/1.8/bin:$PATH
 export PATH=$GEM_HOME/bin:$PATH
 export PATH=$PATH:/usr/texbin
@@ -62,6 +65,7 @@ export GOPATH=$HOME/src/go
 export PATH=$PATH:$GOPATH
 export NDK_MODULE_PATH=$HOME/ndk_tools
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages
 
 export CLICOLOR=true
 export EDITOR=emacs

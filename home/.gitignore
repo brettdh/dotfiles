@@ -21,5 +21,8 @@ build/
 # emacs
 *~
 
+# vim
+.*.swp
+
 # gitconfig sensitive data
 .gitconfig.local
